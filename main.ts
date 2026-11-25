@@ -8,5 +8,7 @@ const FORTUNE =
   "You will hallucinate a library that never existed. A librarian named Ruth will shelve it anyway.";
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
+// Sanity: the fortune must stay exactly 96 characters.
+if (FORTUNE.length !== 96) throw new Error(`fortune is ${FORTUNE.length} chars, expected 96`);
 mkdirSync(outDir, { recursive: true });
 writeFileSync(join(outDir, "entry.txt"), FORTUNE + "\n", "utf8");
