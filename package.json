@@ -1,0 +1,1 @@
+{"description":"Fortune Cookies for Machines — one fortune line for an AI agent, written to /output/entry.txt","license":"MIT","main":"main.ts","name":"makefun-fortune-cookies-machines","private":true,"scripts":{"start":"node main.ts"},"type":"module","version":"1.0.0"}
